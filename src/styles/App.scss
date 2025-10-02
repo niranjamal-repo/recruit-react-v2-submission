@@ -1,0 +1,110 @@
+// Global Setup
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// --- Header/Navigation Styling 
+.app-header, .menu-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+
+    h1, h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0; 
+    }
+}
+
+.burger-button, .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    color: #333;
+    z-index: 10; 
+    width: 24px; 
+    height: 24px;
+}
+
+// Form View Styling
+.main-content {
+    max-width: 400px; 
+    margin: 20px auto;
+    width: 90%; 
+    padding: 0; 
+}
+
+.form-view-container {
+    padding: 0 10px;
+}
+
+.form-view-container h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.card-form {
+    display: grid;
+    gap: 20px;
+    width: 100%; 
+}
+
+// Input and Button Alignment
+input, .submit-button {
+    width: 100%;
+}
+
+.input-group-inline {
+    display: flex;
+    gap: 10px;
+    
+    .input-field-inline {
+        flex: 1; 
+    }
+}
+
+// --- Menu Overlay Styling ---
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content {
+    padding: 20px;
+}
+
+.menu-header {
+    h2 {
+        flex-grow: 1;           
+        text-align: center;     
+    }
+}
+
+.app-header {
+    h1 {
+        flex-grow: 1;           
+        text-align: center;     
+    }
+}
+
+// Other styles (error-message, sr-only) remain unchanged.
