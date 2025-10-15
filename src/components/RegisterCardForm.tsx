@@ -83,7 +83,7 @@ const RegisterCardForm: React.FC<RegisterCardFormProps> = ({ firstName }) => {
             placeholder="Credit card number"
             aria-invalid={!!errors.cardNumber}
           />
-          {errors.cardNumber && <p className="error-message">{errors.cardNumber}</p>}
+          {errors.cardNumber && <p className="error">{errors.cardNumber}</p>}
         </div>
 
         {/* CVC and Expiry Group */}
